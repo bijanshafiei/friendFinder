@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder Survey</title>
+
+    <!-- CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+ 
+</head>
+<body>
+  <div class="container">
+    
+    <div class="jumbotron">
+      <h1 class="">Friend Finder</h1>
+      <h2>Survey</h2>
+    </div>
+    
+    <!-- Survey -->
+    <form role="form">
+      <div>
+        <h4>Name (Required)</h4>
+        <input type="text" name="" id="name" class="form-control" required >
+
+        <h4>Link to Photo (Required)</h4>
+        <input type="text" name="" id="photoUrl" class="form-control" required >
+        <hr>
+        
+        <h3><strong>Question 1</strong></h3>
+        <h4>How often do you slay rebel scum?</h4>
+        <select data-placeholder="" class="chosen-select" id="q1">
+          <option value=""></option>
+          <option value="1">1 (Rarely slay)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Frequently slay)</option>
+        </select>
+
+        <h3><strong>Question 2</strong></h3>
+        <h4>Do you like red or blue lightsabers?</h4>
+        <select data-placeholder="" class="chosen-select" id="q2">
+          <option value=""></option>
+          <option value="1">1 (Red Lightsaber)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Blue lightsaber)</option>
+        </select>
+
+        <h3><strong>Question 3</strong></h3>
+        <h4>Are you my father?</h4>
+        <select data-placeholder="" class="chosen-select" id="q3">
+          <option value=""></option>
+          <option value="1">1 (I am your father)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (What?)</option>
+        </select>
+
+        <h3><strong>Question 4</strong></h3>
+        <h4>How powerful is the dark side of the Force?</h4>
+        <select data-placeholder="" class="chosen-select" id="q4">
+          <option value=""></option>
+          <option value="1">1 (If you only knew the power)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Hate leads to suffering)</option>
+        </select>
+
+        <h3><strong>Question 5</strong></h3>
+        <h4>How impressive do you consider yourself?</h4>
+        <select data-placeholder="" class="chosen-select" id="q5">
+          <option value=""></option>
+          <option value="1">1 (Impressive)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Most Impressive)</option>
+        </select>
+
+      </div>
+      <hr>
+
+      <!-- Submit Button -->
+      <div>
+        <button type="submit" class="btn btn-primary btn-md " id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
+
+      </div>
+    </form>
+
+    <div>
+      <h3 id='friendFound'></h3>
+      <div id="friendImage"></div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
+</script>
